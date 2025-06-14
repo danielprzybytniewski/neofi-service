@@ -1,5 +1,3 @@
-import "@/App.css";
-
 export default function App() {
-  return <h1>NeoFi</h1>;
+  return <h1>NeoFi Service</h1>;
 }
