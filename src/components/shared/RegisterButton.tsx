@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import {
   registerButtonHover,
   registerButtonTap,
-} from "@/constants/framer-motion-variants";
+} from "@/constants/framerMotionVariants";
 import { cn } from "@/lib/utils";
 
 const registerButtonVariants = cva(

@@ -3,7 +3,7 @@ import NavbarButtons from "@/components/navbar/NavbarButtons";
 import {
   navbarItemVariants,
   staggerChildren,
-} from "@/constants/framer-motion-variants";
+} from "@/constants/framerMotionVariants";
 import { navItems } from "@/constants/navigation";
 import { cn } from "@/lib/utils";
 
