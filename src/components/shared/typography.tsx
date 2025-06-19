@@ -8,7 +8,7 @@ const variants = {
   smallTitle: "text-[40px] leading-[100%] font-normal",
   subtitle:
     "text-primary-foreground font-inter text-base md:text-xl leading-[140%] font-normal",
-  buttonText: "text-primary text-lg font-normal",
+  buttonText: "text-background text-lg font-normal",
   text: "text-primary-foreground text-base font-normal",
   smallText: "text-primary-foreground text-sm font-normal",
   caption: "text-secondary-foreground text-xs font-normal",
@@ -31,7 +31,7 @@ type TypographyProps = {
   component?: AllowedTags;
   variant?: Variant;
   className?: string;
-  children?: ReactNode;
+  children: ReactNode;
 } & HTMLAttributes<HTMLElement>;
 
 export default function Typography({

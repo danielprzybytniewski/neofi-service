@@ -84,7 +84,7 @@
   --secondary: #9dff3a;
   --secondary-foreground: #4d4d4d;
   --muted: #2e2e2e;
-  --gradient-1: linear-gradient(90deg, #4d4d4d 0%, #b3b3b3 100%);
+  --gradient-1: linear-gradient(to left, #4d4d4d 0%, #b3b3b3 100%);
   --gradient-2: linear-gradient(90deg, #75a941 0%, #3a7500 100%);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -132,6 +132,7 @@
   .bg-gradient-1 {
     background: var(--gradient-1);
   }
+
   .bg-gradient-2 {
     background: var(--gradient-2);
   }
