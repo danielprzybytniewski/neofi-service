@@ -3,11 +3,11 @@ import { cn } from "@/lib/utils";
 
 const variants = {
   largeTitle:
-    "text-foreground text-[40px] md:text-[64px] leading-[110%] font-medium md:font-bold",
-  title: "text-foreground text-[28px] md:text-5xl leading-[100%] font-normal",
+    "text-foreground text-[40px] lg:text-[64px] leading-[110%] font-medium lg:font-bold",
+  title: "text-foreground text-[28px] lg:text-5xl leading-[100%] font-normal",
   smallTitle: "text-[40px] leading-[100%] font-normal",
   subtitle:
-    "text-primary-foreground font-inter text-base md:text-xl leading-[140%] font-normal",
+    "text-primary-foreground font-inter text-base lg:text-xl leading-[140%] font-normal",
   buttonText: "text-background text-lg font-normal",
   text: "text-primary-foreground text-base font-normal",
   smallText: "text-primary-foreground text-sm font-normal",
