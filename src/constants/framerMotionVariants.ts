@@ -19,3 +19,14 @@ export const registerButtonHover = {
 export const registerButtonTap = {
   scale: 0.95,
 };
+
+export const registerButtonOutlineHover = {
+  scale: 1.05,
+  backgroundColor: "rgba(0, 0, 0, 0.1)",
+  transition: { duration: 0.3 },
+};
+
+export const registerButtonOutlineTap = {
+  scale: 0.98,
+  backgroundColor: "rgba(0, 0, 0, 0.2)",
+};

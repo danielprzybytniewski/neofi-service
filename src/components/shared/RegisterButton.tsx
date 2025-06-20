@@ -4,18 +4,20 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   registerButtonHover,
+  registerButtonOutlineHover,
+  registerButtonOutlineTap,
   registerButtonTap,
 } from "@/constants/framerMotionVariants";
 import { cn } from "@/lib/utils";
 
 const registerButtonVariants = cva(
-  "text-background bg-secondary inline-flex cursor-pointer items-center justify-center rounded-[40px] px-6 font-normal transition-colors duration-200 hover:bg-lime-400",
+  "text-background bg-secondary inline-flex cursor-pointer items-center justify-center rounded-[40px] px-6 font-normal transition-colors duration-200 hover:bg-lime-500",
   {
     variants: {
       variant: {
         square: "rounded-none",
         outline:
-          "text-foreground bg-transparent hover:bg-gray-900 hover:text-gray-200",
+          "text-foreground bg-transparent hover:bg-gradient-to-r hover:from-gray-800 hover:to-gray-900 hover:text-gray-200",
       },
       size: {
         default: "h-12 lg:h-13 py-4 text-base lg:text-lg",
@@ -38,8 +40,13 @@ export default function RegisterButton({
   className,
   ...props
 }: RegisterButtonProps) {
+  const hoverAnimation =
+    variant === "outline" ? registerButtonOutlineHover : registerButtonHover;
+
+  const tapAnimation =
+    variant === "outline" ? registerButtonOutlineTap : registerButtonTap;
   return (
-    <motion.div whileHover={registerButtonHover} whileTap={registerButtonTap}>
+    <motion.div whileHover={hoverAnimation} whileTap={tapAnimation}>
       <Button
         className={cn(registerButtonVariants({ variant, size }), className)}
         {...props}
