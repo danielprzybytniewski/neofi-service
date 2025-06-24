@@ -6,7 +6,9 @@ export default function DesktopNavbar() {
   return (
     <nav className="hidden h-20 px-[60px] py-5 lg:block xl:px-[120px]">
       <div className="container mx-auto flex h-full items-center justify-between">
-        <img src={logoImg} alt="NeoFi Logo" />
+        <a href="#hero">
+          <img src={logoImg} alt="NeoFi Logo" className="cursor-pointer" />
+        </a>
         <div className="flex items-center space-x-10">
           <NavbarItems />
         </div>

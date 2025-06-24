@@ -1,3 +1,4 @@
+import BrandsSection from "@/components/brands/BrandsSection";
 import HeroSection from "@/components/hero/HeroSection";
 import Navbar from "@/components/navbar/Navbar";
 
@@ -7,6 +8,7 @@ export default function App() {
       <Navbar />
       <main className="flex-1">
         <HeroSection />
+        <BrandsSection />
       </main>
     </div>
   );
