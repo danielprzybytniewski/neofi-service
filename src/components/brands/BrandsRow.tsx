@@ -8,7 +8,7 @@ type BrandsRowProps = {
 export default function BrandsRow({ brandLogos, gap }: BrandsRowProps) {
   return (
     <div
-      className="flex items-center justify-center"
+      className="flex flex-wrap items-center justify-center"
       style={{ gap: `${gap}px` }}
     >
       {brandLogos.map((logo) => (
