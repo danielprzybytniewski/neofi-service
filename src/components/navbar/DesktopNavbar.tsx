@@ -1,11 +1,20 @@
 import logoImg from "@/assets/images/logo.svg";
 import NavbarButtons from "@/components/navbar/NavbarButtons";
 import NavbarItems from "@/components/navbar/NavbarItems";
+import { useScrollDetection } from "@/hooks/useScrollDetection";
+import { cn } from "@/lib/utils";
 
 export default function DesktopNavbar() {
+  const isScrolled = useScrollDetection();
+
   return (
-    <nav className="hidden h-20 px-[60px] py-5 lg:block xl:px-[120px]">
-      <div className="container mx-auto flex h-full items-center justify-between">
+    <nav
+      className={cn(
+        "bg-background fixed top-0 z-50 hidden h-20 w-full max-w-[1440px] px-[60px] py-5 lg:block xl:px-[120px]",
+        isScrolled && "left-0 max-w-full shadow-lg",
+      )}
+    >
+      <div className="container mx-auto flex h-full max-w-[1200px] items-center justify-between">
         <a href="#hero">
           <img src={logoImg} alt="NeoFi Logo" className="cursor-pointer" />
         </a>

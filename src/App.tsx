@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="mx-auto flex min-h-screen max-w-[1440px] flex-col">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 pt-18 lg:pt-20">
         <HeroSection />
         <BrandsSection />
         <FeaturesBreakdownSection />
