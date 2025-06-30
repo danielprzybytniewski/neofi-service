@@ -1,5 +1,10 @@
 import HeroContent from "@/components/hero/HeroContent";
 import HeroImage from "@/components/hero/HeroImage";
+import FramerMotionViewportWrapper from "@/components/shared/FramerMotionViewportWrapper";
+import {
+  heroContentVariant,
+  heroImageVariant,
+} from "@/constants/framerMotionVariants";
 
 export default function HeroSection() {
   return (
@@ -8,8 +13,18 @@ export default function HeroSection() {
       className="scroll-mt-18 px-5 py-0 lg:scroll-mt-20 lg:px-[60px] xl:px-[120px]"
     >
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-0 py-10 lg:flex-row lg:py-[88px]">
-        <HeroContent />
-        <HeroImage />
+        <FramerMotionViewportWrapper
+          className="flex-1"
+          variants={heroContentVariant}
+        >
+          <HeroContent />
+        </FramerMotionViewportWrapper>
+        <FramerMotionViewportWrapper
+          className="flex-1"
+          variants={heroImageVariant}
+        >
+          <HeroImage />
+        </FramerMotionViewportWrapper>
       </div>
     </section>
   );
