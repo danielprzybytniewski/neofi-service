@@ -1,7 +1,11 @@
 "use client";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Autoplay from "embla-carousel-autoplay";
 import BrandsLogo from "@/components/brands/BrandsLogo";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import type { BrandLogos } from "@/constants/brands";
 
 type BrandsCarouselProps = {
@@ -13,34 +17,25 @@ export default function BrandsCarousel({ brandLogos }: BrandsCarouselProps) {
 
   return (
     <div className="hidden max-w-[940px] lg:block">
-      <Swiper
-        modules={[Autoplay]}
-        autoplay={{
-          disableOnInteraction: false,
-          reverseDirection: false,
-          stopOnLastSlide: false,
-          pauseOnMouseEnter: false,
-          delay: 500,
-        }}
-        spaceBetween={72}
-        slidesPerView={5}
-        loop={true}
-        speed={1500}
-        allowTouchMove={false}
-        onSwiper={(swiper) => {
-          setTimeout(() => {
-            if (swiper.autoplay && swiper.autoplay.start) {
-              swiper.autoplay.start();
-            }
-          }, 100);
-        }}
+      <Carousel
+        opts={{ align: "start", loop: true }}
+        plugins={[
+          Autoplay({
+            delay: 1800,
+            stopOnInteraction: false,
+            stopOnMouseEnter: false,
+            stopOnFocusIn: false,
+          }),
+        ]}
       >
-        {duplicatedBrands.map((logo, index) => (
-          <SwiperSlide key={index}>
-            <BrandsLogo name={logo.name} desktopLogo={logo.desktopLogo} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <CarouselContent className="-ml-[72px]">
+          {duplicatedBrands.map((logo, index) => (
+            <CarouselItem key={index} className="basis-1/5 pl-[72px]">
+              <BrandsLogo name={logo.name} desktopLogo={logo.desktopLogo} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </div>
   );
 }
