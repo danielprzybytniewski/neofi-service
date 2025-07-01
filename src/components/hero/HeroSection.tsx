@@ -10,9 +10,9 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="scroll-mt-18 px-5 py-0 lg:scroll-mt-20 lg:px-[60px] xl:px-[120px]"
+      className="scroll-mt-18 px-5 py-0 lg:scroll-mt-20 lg:px-15 xl:px-30"
     >
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-0 py-10 lg:flex-row lg:py-[88px]">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-0 py-10 lg:flex-row lg:py-22">
         <FramerMotionViewportWrapper
           className="flex-1"
           variants={heroContentVariant}

@@ -2,13 +2,13 @@ import connectivityImg from "@/assets/images/connectivity.svg";
 import decentralisationImg from "@/assets/images/decentralisation.svg";
 import scalabilityImg from "@/assets/images/scalability.svg";
 
-export type FeaturesBreakdownDataType = {
+export type FeaturesBreakdown = {
   icon: string;
   title: string;
   description: string;
 };
 
-export const featuresBreakdownData: FeaturesBreakdownDataType[] = [
+export const featuresBreakdown: FeaturesBreakdown[] = [
   {
     icon: scalabilityImg,
     title: "Scalability",

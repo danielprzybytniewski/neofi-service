@@ -10,7 +10,7 @@ export default function DesktopNavbar() {
   return (
     <nav
       className={cn(
-        "bg-background fixed top-0 z-50 hidden h-20 w-full max-w-[1440px] px-[60px] py-5 lg:block xl:px-[120px]",
+        "bg-background fixed top-0 z-50 hidden h-20 w-full max-w-[1440px] px-15 py-5 lg:block xl:px-30",
         isScrolled && "left-0 max-w-full shadow-lg",
       )}
     >
