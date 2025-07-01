@@ -1,4 +1,5 @@
 import Typography from "@/components/shared/Typography";
+import { heroSubtitle } from "@/constants/hero";
 
 export default function HeroTitle() {
   return (
@@ -11,12 +12,16 @@ export default function HeroTitle() {
         Revolutionizing Web3 Finance
       </Typography>
       <Typography
-        component="p"
         variant="subtitle"
-        className="mt-4 mb-8 w-full lg:mt-6 lg:mb-10 lg:max-w-xl lg:pr-5"
+        className="hidden w-full lg:mt-6 lg:mb-10 lg:block lg:max-w-xl lg:pr-5"
       >
-        Secure, scalable, and decentralized solutions for your digital
-        assets—experience the future of financial freedom.
+        {heroSubtitle}
+      </Typography>
+      <Typography
+        variant="text"
+        className="mt-4 mb-8 block w-full max-w-2xl lg:hidden"
+      >
+        {heroSubtitle}
       </Typography>
     </>
   );

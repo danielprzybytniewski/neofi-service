@@ -2,6 +2,7 @@ import BrandsSection from "@/components/brands/BrandsSection";
 import FeaturesBreakdownSection from "@/components/features-breakdown/FeaturesBreakdownSection";
 import HeroSection from "@/components/hero/HeroSection";
 import Navbar from "@/components/navbar/Navbar";
+import StatsSection from "@/components/stats/StatsSection";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <HeroSection />
         <BrandsSection />
         <FeaturesBreakdownSection />
+        <StatsSection />
       </main>
     </div>
   );
