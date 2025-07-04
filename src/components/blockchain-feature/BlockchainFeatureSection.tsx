@@ -2,7 +2,7 @@ import BlockchainFeatureCard from "@/components/blockchain-feature/BlockchainFea
 import BlockchainFeatureHeader from "@/components/blockchain-feature/BlockchainFeatureHeader";
 import BlockchainFeatureImage from "@/components/blockchain-feature/BlockchainFeatureImage";
 import FramerMotionViewportWrapper from "@/components/shared/FramerMotionViewportWrapper";
-import { blockchainFeature } from "@/constants/blockchainFeature";
+import { blockchainFeatures } from "@/constants/blockchainFeature";
 import {
   blockchainFeatureCardVariant,
   blockchainFeatureHeaderVariant,
@@ -23,7 +23,7 @@ export default function BlockchainFeatureSection() {
           <BlockchainFeatureImage />
         </FramerMotionViewportWrapper>
         <div className="max-w-2xl space-y-4 lg:flex-1 lg:space-y-10">
-          {blockchainFeature.map((feature) => (
+          {blockchainFeatures.map((feature) => (
             <FramerMotionViewportWrapper
               key={feature.title}
               variants={blockchainFeatureCardVariant}

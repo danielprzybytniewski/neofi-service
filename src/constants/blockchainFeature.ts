@@ -8,7 +8,7 @@ export type BlockchainFeature = {
   description: string;
 };
 
-export const blockchainFeature: BlockchainFeature[] = [
+export const blockchainFeatures: BlockchainFeature[] = [
   {
     icon: ubiquityImg,
     title: "Connectivity and ubiquity",
