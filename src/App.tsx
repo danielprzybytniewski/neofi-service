@@ -1,3 +1,4 @@
+import BlockchainFeatureSection from "@/components/blockchain-feature/BlockchainFeatureSection";
 import BrandsSection from "@/components/brands/BrandsSection";
 import FeaturesBreakdownSection from "@/components/features-breakdown/FeaturesBreakdownSection";
 import HeroSection from "@/components/hero/HeroSection";
@@ -13,6 +14,7 @@ export default function App() {
         <BrandsSection />
         <FeaturesBreakdownSection />
         <StatsSection />
+        <BlockchainFeatureSection />
       </main>
     </div>
   );
