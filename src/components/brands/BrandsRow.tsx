@@ -1,8 +1,8 @@
 import BrandsLogo from "@/components/brands/BrandsLogo";
-import type { BrandLogos } from "@/constants/brands";
+import type { BrandLogo } from "@/constants/brands";
 
 type BrandsRowProps = {
-  brandLogos: BrandLogos[];
+  brandLogos: BrandLogo[];
   gap: number;
 };
 export default function BrandsRow({ brandLogos, gap }: BrandsRowProps) {

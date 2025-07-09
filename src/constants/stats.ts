@@ -1,9 +1,9 @@
-export type Stats = {
+export type Stat = {
   value: string;
   label: string;
 };
 
-export const stats: Stats[] = [
+export const stats: Stat[] = [
   { value: "2M+", label: "Users" },
   { value: "500k+", label: "Transactions" },
   { value: "35+", label: "Countries" },
