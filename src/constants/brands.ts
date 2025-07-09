@@ -1,4 +1,4 @@
-export type BrandLogos = {
+export type BrandLogo = {
   name: string;
   desktopLogo?: string;
   mobileLogo?: string;
@@ -18,13 +18,10 @@ const generateBrandLogos = (brandNumber: number) => ({
   ).href,
 });
 
-export const brandLogos: BrandLogos[] = Array.from(
-  { length: 5 },
-  (_, index) => {
-    const brandNumber = index + 1;
-    return {
-      name: `Brand ${brandNumber}`,
-      ...generateBrandLogos(brandNumber),
-    };
-  },
-);
+export const brandLogos: BrandLogo[] = Array.from({ length: 5 }, (_, index) => {
+  const brandNumber = index + 1;
+  return {
+    name: `Brand ${brandNumber}`,
+    ...generateBrandLogos(brandNumber),
+  };
+});

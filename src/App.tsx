@@ -4,6 +4,7 @@ import FeaturesBreakdownSection from "@/components/features-breakdown/FeaturesBr
 import HeroSection from "@/components/hero/HeroSection";
 import Navbar from "@/components/navbar/Navbar";
 import StatsSection from "@/components/stats/StatsSection";
+import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <FeaturesBreakdownSection />
         <StatsSection />
         <BlockchainFeatureSection />
+        <TestimonialsSection />
       </main>
     </div>
   );

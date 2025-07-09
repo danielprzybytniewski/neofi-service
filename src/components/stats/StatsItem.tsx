@@ -1,7 +1,7 @@
 import Typography from "@/components/shared/Typography";
-import type { Stats } from "@/constants/stats";
+import type { Stat } from "@/constants/stats";
 
-export default function StatsItem({ value, label }: Stats) {
+export default function StatsItem({ value, label }: Stat) {
   return (
     <div className="flex flex-col items-center">
       <Typography

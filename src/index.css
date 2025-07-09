@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "swiper/css";
-@import "swiper/css/autoplay";
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

@@ -1,10 +1,10 @@
-import type { BrandLogos } from "@/constants/brands";
+import type { BrandLogo } from "@/constants/brands";
 
 export default function BrandsLogo({
   name,
   desktopLogo,
   mobileLogo,
-}: BrandLogos) {
+}: BrandLogo) {
   return (
     <div className="flex items-center justify-center p-0">
       <picture>

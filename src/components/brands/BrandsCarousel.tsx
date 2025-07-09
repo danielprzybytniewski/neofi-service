@@ -6,10 +6,10 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import type { BrandLogos } from "@/constants/brands";
+import type { BrandLogo } from "@/constants/brands";
 
 type BrandsCarouselProps = {
-  brandLogos: BrandLogos[];
+  brandLogos: BrandLogo[];
 };
 
 export default function BrandsCarousel({ brandLogos }: BrandsCarouselProps) {
