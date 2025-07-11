@@ -6,7 +6,7 @@ import {
   type ViewportOptions,
 } from "framer-motion";
 
-type MotionViewportWrapperProps = {
+type FramerMotionViewportWrapperProps = {
   variants?: Variants;
   children: ReactNode;
   className?: string;
@@ -21,7 +21,7 @@ export default function FramerMotionViewportWrapper({
   initial = "hidden",
   whileInView = "visible",
   viewport = { once: true },
-}: MotionViewportWrapperProps) {
+}: FramerMotionViewportWrapperProps) {
   return (
     <motion.div
       variants={variants}

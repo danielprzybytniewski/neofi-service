@@ -1,5 +1,6 @@
 import BlockchainFeatureSection from "@/components/blockchain-feature/BlockchainFeatureSection";
 import BrandsSection from "@/components/brands/BrandsSection";
+import FAQSection from "@/components/faq/FAQSection";
 import FeaturesBreakdownSection from "@/components/features-breakdown/FeaturesBreakdownSection";
 import HeroSection from "@/components/hero/HeroSection";
 import Navbar from "@/components/navbar/Navbar";
@@ -17,6 +18,7 @@ export default function App() {
         <StatsSection />
         <BlockchainFeatureSection />
         <TestimonialsSection />
+        <FAQSection />
       </main>
     </div>
   );

@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="bg-primary flex flex-col items-center px-5 py-10 lg:px-0 lg:py-20"
+      className="bg-primary flex scroll-mt-10 flex-col items-center px-5 py-10 lg:scroll-mt-6 lg:px-0 lg:py-20"
     >
       <TestimonialsHeader />
       <div className="relative mt-8 w-full max-w-2xl lg:mt-[72px] lg:max-w-none">

@@ -1,3 +1,5 @@
+import type { Variants } from "framer-motion";
+
 export const staggerChildren = {
   visible: {
     transition: {
@@ -31,47 +33,26 @@ export const registerButtonOutlineTap = {
   backgroundColor: "rgba(0, 0, 0, 0.2)",
 };
 
-export const heroContentVariant = {
-  hidden: { opacity: 0, y: -50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, delay: 0.2 },
-  },
+const createVariant = (
+  direction: "x" | "y",
+  offset: number,
+  delay: number = 0.2,
+  duration: number = 0.5,
+): Variants => {
+  return {
+    hidden: { opacity: 0, [direction]: offset },
+    visible: {
+      opacity: 1,
+      [direction]: 0,
+      transition: { duration, delay },
+    },
+  } as Variants;
 };
 
-export const heroImageVariant = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, delay: 0.7 },
-  },
-};
-
-export const blockchainFeatureHeaderVariant = {
-  hidden: { opacity: 0, y: -40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, delay: 0.2 },
-  },
-};
-
-export const blockchainFeatureImageVariant = {
-  hidden: { opacity: 0, x: -40 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, delay: 0.7 },
-  },
-};
-
-export const blockchainFeatureCardVariant = {
-  hidden: { opacity: 0, x: 40 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, delay: 1.2 },
-  },
-};
+export const heroContentVariant = createVariant("y", -50);
+export const heroImageVariant = createVariant("y", 50, 0.7);
+export const blockchainFeatureHeaderVariant = createVariant("y", -30);
+export const blockchainFeatureImageVariant = createVariant("x", -30, 0.7);
+export const blockchainFeatureCardVariant = createVariant("x", 30, 1.2);
+export const faqHeaderVariant = createVariant("y", -40);
+export const faqAccordionVariant = createVariant("y", 40, 0.7);

@@ -42,6 +42,7 @@ export default function Typography({
   ...props
 }: TypographyProps) {
   const Component = component;
+
   return (
     <Component className={cn(variants[variant], className)} {...props}>
       {children}

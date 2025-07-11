@@ -45,6 +45,7 @@ export default function RegisterButton({
 
   const tapAnimation =
     variant === "outline" ? registerButtonOutlineTap : registerButtonTap;
+
   return (
     <motion.div whileHover={hoverAnimation} whileTap={tapAnimation}>
       <Button
