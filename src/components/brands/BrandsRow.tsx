@@ -5,6 +5,7 @@ type BrandsRowProps = {
   brandLogos: BrandLogo[];
   gap: number;
 };
+
 export default function BrandsRow({ brandLogos, gap }: BrandsRowProps) {
   return (
     <div
