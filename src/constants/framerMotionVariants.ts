@@ -51,8 +51,8 @@ const createVariant = (
 
 export const heroContentVariant = createVariant("y", -50);
 export const heroImageVariant = createVariant("y", 50, 0.7);
-export const blockchainFeatureHeaderVariant = createVariant("y", -30);
-export const blockchainFeatureImageVariant = createVariant("x", -30, 0.7);
-export const blockchainFeatureCardVariant = createVariant("x", 30, 1.2);
-export const faqHeaderVariant = createVariant("y", -40);
-export const faqAccordionVariant = createVariant("y", 40, 0.7);
+export const blockchainFeatureHeaderVariant = createVariant("y", -45, 0.2, 0.4);
+export const blockchainFeatureImageVariant = createVariant("x", -45, 0.6, 0.4);
+export const blockchainFeatureCardVariant = createVariant("x", 45, 1, 0.4);
+export const faqHeaderVariant = createVariant("y", -30);
+export const faqAccordionVariant = createVariant("y", 30, 0.7);

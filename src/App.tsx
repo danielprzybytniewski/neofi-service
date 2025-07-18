@@ -3,10 +3,12 @@ import BrandsSection from "@/components/brands/BrandsSection";
 import CTASection from "@/components/cta/CTASection";
 import FAQSection from "@/components/faq/FAQSection";
 import FeaturesBreakdownSection from "@/components/features-breakdown/FeaturesBreakdownSection";
+import Footer from "@/components/footer/Footer";
 import HeroSection from "@/components/hero/HeroSection";
 import Navbar from "@/components/navbar/Navbar";
 import StatsSection from "@/components/stats/StatsSection";
 import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function App() {
   return (
@@ -21,7 +23,9 @@ export default function App() {
         <TestimonialsSection />
         <FAQSection />
         <CTASection />
+        <Footer />
       </main>
+      <Toaster />
     </div>
   );
 }
