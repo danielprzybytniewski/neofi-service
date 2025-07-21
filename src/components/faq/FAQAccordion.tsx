@@ -17,7 +17,7 @@ export default function FAQAccordion() {
       >
         {faqData.map((faq) => (
           <AccordionItem key={faq.id} value={faq.id}>
-            <AccordionTrigger className="border-muted hover:border-secondary flex max-h-18 cursor-pointer items-center rounded-none border px-5 py-4 transition-colors duration-200 hover:no-underline lg:max-h-13">
+            <AccordionTrigger className="border-muted hover:border-secondary data-[state=open]:border-secondary focus-visible:border-secondary flex max-h-18 cursor-pointer items-center rounded-none border px-5 py-4 transition-colors duration-200 hover:no-underline focus:outline-none lg:max-h-13">
               <Typography component="h3" className="text-foreground">
                 {faq.question}
               </Typography>

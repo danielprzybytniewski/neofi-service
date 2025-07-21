@@ -14,6 +14,7 @@ type FramerMotionViewportWrapperProps = {
   whileInView?: string | TargetAndTransition;
   viewport?: ViewportOptions;
 };
+
 export default function FramerMotionViewportWrapper({
   variants,
   children,

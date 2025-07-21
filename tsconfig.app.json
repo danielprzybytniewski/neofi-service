@@ -22,7 +22,8 @@
       "@components/*": ["src/components/*"],
       "@lib/*": ["src/lib/*"],
       "@/assets/*": ["src/assets/*"],
-      "@/constants/*": ["src/constants/*"]
+      "@/constants/*": ["src/constants/*"],
+      "@/hooks/*": ["src/hooks/*"]
     },
 
     /* Linting */

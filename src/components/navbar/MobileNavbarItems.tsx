@@ -27,8 +27,9 @@ export default function MobileNavbarItems({
             key={item.label}
             href={item.href}
             className={cn(
-              "text-primary-foreground text-base font-normal transition-colors duration-200 hover:text-gray-500",
-              index === 0 && "text-foreground hover:text-gray-400",
+              "text-primary-foreground text-base font-normal transition-colors duration-200 hover:text-gray-500 focus:text-gray-500 active:text-gray-500",
+              index === 0 &&
+                "text-foreground hover:text-gray-400 focus:text-gray-400 active:text-gray-400",
             )}
             onClick={handleClose}
             variants={navbarItemVariants}
