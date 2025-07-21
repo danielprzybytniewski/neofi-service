@@ -18,7 +18,7 @@ export default function FooterLinkColumn({
           <li key={link.name}>
             <a
               href={link.href}
-              className="text-primary-foreground text-sm font-normal transition-colors duration-200 hover:text-gray-500"
+              className="text-primary-foreground text-sm font-normal transition-colors duration-200 hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
             >
               {link.name}
             </a>

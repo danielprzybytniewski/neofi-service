@@ -16,7 +16,7 @@ export default function DesktopNavbar() {
     >
       <div className="container mx-auto flex h-full max-w-[1200px] items-center justify-between">
         <a href="#hero">
-          <img src={logoImg} alt="NeoFi Logo" className="cursor-pointer" />
+          <img src={logoImg} alt="NeoFi Logo" />
         </a>
         <div className="flex items-center space-x-10">
           <NavbarItems />

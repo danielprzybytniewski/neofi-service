@@ -1,6 +1,7 @@
 import StatsHeader from "@/components/stats/StatsHeader";
 import StatsItem from "@/components/stats/StatsItem";
 import { stats } from "@/constants/stats";
+
 export default function StatsSection() {
   return (
     <section

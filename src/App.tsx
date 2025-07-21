@@ -23,8 +23,8 @@ export default function App() {
         <TestimonialsSection />
         <FAQSection />
         <CTASection />
-        <Footer />
       </main>
+      <Footer />
       <Toaster />
     </div>
   );

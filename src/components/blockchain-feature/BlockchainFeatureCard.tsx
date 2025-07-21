@@ -8,7 +8,10 @@ export default function BlockchainFeatureCard({
 }: BlockchainFeature) {
   return (
     <div className="bg-gradient-1 rounded-[21px] p-px text-left">
-      <div className="bg-primary hover:border-secondary flex gap-5 rounded-[20px] border border-transparent px-5 py-6 transition-colors duration-200 lg:gap-6 lg:py-[30px] 2xl:max-h-[162px]">
+      <div
+        className="bg-primary hover:border-secondary focus:border-secondary flex gap-5 rounded-[20px] border border-transparent px-5 py-6 transition-colors duration-200 focus:outline-none lg:gap-6 lg:py-[30px] 2xl:max-h-[162px]"
+        tabIndex={0}
+      >
         <div className="flex-shrink-0">
           <img src={icon} alt={title} />
         </div>

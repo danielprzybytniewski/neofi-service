@@ -1,4 +1,5 @@
 import { type SubmitHandler, useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 import { toast } from "sonner";
 import sendImg from "@/assets/images/send.svg";
 import { Button } from "@/components/ui/button";
@@ -43,9 +44,9 @@ export default function FooterForm() {
         />
         <Button
           type="submit"
-          className="cursor-pointer p-0 transition-transform duration-200 hover:scale-110 active:scale-110"
+          className="cursor-pointer p-0 transition-transform duration-200 hover:scale-110"
         >
-          <img src={sendImg} alt="Send" />
+          <motion.img src={sendImg} alt="Send" whileTap={{ scale: 0.9 }} />
         </Button>
       </form>
       {errors.email && (
