@@ -9,8 +9,20 @@ import Navbar from "@/components/navbar/Navbar";
 import StatsSection from "@/components/stats/StatsSection";
 import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 import { Toaster } from "@/components/ui/sonner";
+import { useSectionObserver } from "@/hooks/useSectionObserver";
 
 export default function App() {
+  useSectionObserver([
+    "hero",
+    "brands",
+    "features-breakdown",
+    "stats",
+    "blockchain-feature",
+    "testimonials",
+    "faq",
+    "cta",
+  ]);
+
   return (
     <div className="mx-auto flex min-h-screen max-w-[1440px] flex-col">
       <Navbar />
