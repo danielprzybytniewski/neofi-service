@@ -1,4 +1,4 @@
-## Neofi Service
+## NeoFi Service
 
 This project transforms the static design concept into a living, breathing web application. Built with **React 19** and fully typed using **TypeScript**, brought to life with smooth animations and interactive components. Designed by **[Mohammad Ali](https://www.figma.com/@maliux)**. Original design **[here](https://www.figma.com/community/file/1472437465816738365/neofi-web3-landing-page)**.
 
@@ -35,7 +35,7 @@ This project is licensed under the MIT License.
 
 ## Screenshots
 
-![feature-breakdown-showcase](public/docs/feature-breakdown-showcase.jpg)
+![features-breakdown-showcase](public/docs/features-breakdown-showcase.jpg)
 
 ![stats-showcase](public/docs/stats-showcase.jpg)
 
