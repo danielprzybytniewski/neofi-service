@@ -35,7 +35,7 @@ This project is licensed under the MIT License.
 
 ## Screenshots
 
-![feature-breakdown-showcase](public/docs/feature-breakdown-showcase.jpg)
+![features-breakdown-showcase](public/docs/features-breakdown-showcase.jpg)
 
 ![stats-showcase](public/docs/stats-showcase.jpg)
 
